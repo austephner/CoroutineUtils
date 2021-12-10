@@ -17,7 +17,7 @@ yield return CoroutineUtils.InvokeAfterFrames(() => Debug.Log("Hello World"), 10
 ### InvokeAfterTime
 Invokes an action after the given seconds of real time. 
 ```c#
-yield return CoroutineUtils.InvokeAfterFrames(() => Debug.Log("Hello World"), 15.0f);
+yield return CoroutineUtils.InvokeAfterTime(() => Debug.Log("Hello World"), 15.0f);
 ```
 
 ### InvokeWhenTrue
@@ -34,8 +34,8 @@ Yields the return of "this" `IEnumerator` then either yields another `IEnumerato
 ```c#
 private void Start() 
 {
-    StartCoroutine(someEnumerator().Then(someOtherEnumerator);
-    StartCoroutine(someEnumerator().Then(someMethod);
+    StartCoroutine(someEnumerator().Then(someOtherEnumerator));
+    StartCoroutine(someEnumerator().Then(someMethod));
 }
 
 private IEnumerator someEnumerator() 
@@ -54,4 +54,13 @@ private void someMethod()
 {
     Debug.Log("I'm a method!");
 }
+```
+
+The above code examples would print: 
+```
+Hello World
+Hello Again World
+---
+Hello World
+I'm a method!
 ```
