@@ -1,6 +1,6 @@
 {
     "name": "austephnerllc.coroutineutils",
-    "rootNamespace": "Coroutine Utils",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
