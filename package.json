@@ -1,6 +1,6 @@
 {
   "name": "com.austephnerllc.coroutineutils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Coroutine Utils",
   "description": "Additional functionality for Unity Coroutines and IEnumerators.",
   "unity": "2020.3",
